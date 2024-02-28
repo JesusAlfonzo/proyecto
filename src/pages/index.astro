@@ -1,0 +1,47 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Boton from "@/components/Button.astro"
+import Nav from "@/components/Nav.astro"
+import Footer from "@/components/Footer.astro"
+---
+
+
+<Layout title="Sigea 2.0">
+    <main class="m-0">
+
+        <!-- Barra de Navegación -->
+        <Nav />
+        <div>
+            <!-- Texto principal de Bienvenida -->
+            <div class="mt-60">
+                <h1 class="text-white animate-blurred-fade-in text-7xl text-center"
+                >Conoce Tu Progreso <br>Estudiantil</h1>
+             </div>
+
+            <!-- Subtexto de Bienvenida -->
+            <div class="">
+                <h2 class="text-white animate-blurred-fade-in text-center py-4 text-sm ">
+                    Sigea 2.0 es el nuevo sistema de notas para los estudiantes del Instituto Universitario Jesús Obrero, 
+                    <br>Sede Catia Basandonos en el antiguo sistema, esta vez, mejorado, estético y a tu mano.
+                </h2>
+            </div>
+        </div>
+        
+        <!-- Botones para ingreso de estudiantes y Profesores -->
+        <div class="text-center py-5 animate-blurred-fade-in mb-56">
+            <Boton a="Login/Login-estudiantes" title="Estudiantes" />
+            <Boton a="Login/Login-profesores "title="Profesores"/>
+        </div>
+
+        <Footer />
+
+    </main>
+</Layout>
+
+<style>
+    main{
+        background: url(../img/Iujo-mainpage-dark.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+</style>
